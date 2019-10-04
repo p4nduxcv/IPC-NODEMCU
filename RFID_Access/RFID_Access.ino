@@ -14,8 +14,8 @@ int ledPinOut = D1;
 #include <FirebaseArduino.h>
 
 
-#define FIREBASE_HOST "i-am-beginner-iot.firebaseio.com"
-#define FIREBASE_AUTH "GiFEFTpY4GAb9BWPKF3gzOoj27uELYqV4Nn2okau"
+#define FIREBASE_HOST " "
+#define FIREBASE_AUTH " "
 
 MFRC522 mfrc522(SS_PIN, RST_PIN);   // Create MFRC522 instance.
 int statuss = 0;
@@ -88,7 +88,7 @@ void loop()
     //Post Data
     String postData;
     postData = webPage;
-    http.begin("http://192.168.0.103:3000/api/tag");                 //Specify request destination
+    http.begin(" ");                 //Specify request destination
     http.addHeader("Content-Type", "application/json");    //Specify content-type header
     int httpCode = http.POST(postData);   //Send the request
     String payload = http.getString();    //Get the response payload
