@@ -9,8 +9,8 @@
 
 #define SS_PIN D4
 #define RST_PIN D3
-#define FIREBASE_HOST "i-am-beginner-iot.firebaseio.com"
-#define FIREBASE_AUTH "GiFEFTpY4GAb9BWPKF3gzOoj27uELYqV4Nn2okau"
+#define FIREBASE_HOST " "
+#define FIREBASE_AUTH " "
 
 int ledPin = D2;
 int isObstaclePin1 = D0;
@@ -69,8 +69,8 @@ void loop()
   String fireSlot2 = String(isObstacle2);
 
 
-  Firebase.setString("/SLOT1/State", fireSlot1);
-  Firebase.setString("/SLOT2/State", fireSlot2);
+  Firebase.setString(" ", fireSlot1);
+  Firebase.setString(" ", fireSlot2);
 
   String webPage;
   // Look for new cards
@@ -112,7 +112,7 @@ void loop()
     //Post Data
     String postData;
     postData = webPage;
-    http.begin("http://192.168.0.103:3000/api/tag");                 //Specify request destination
+    http.begin("http://...");                 //Specify request destination
     http.addHeader("Content-Type", "application/json");    //Specify content-type header
     int httpCode = http.POST(postData);   //Send the request
     String payload = http.getString();    //Get the response payload
