@@ -1,8 +1,8 @@
 #include <LiquidCrystal_I2C.h>
 #include <ESP8266WiFi.h>
 #include <FirebaseArduino.h>
-#define FIREBASE_HOST "i-am-beginner-iot.firebaseio.com"
-#define FIREBASE_AUTH "GiFEFTpY4GAb9BWPKF3gzOoj27uELYqV4Nn2okau"
+#define FIREBASE_HOST " "
+#define FIREBASE_AUTH " "
 
 
 #define WIFI_SSID "D03CDialog1-7003"
